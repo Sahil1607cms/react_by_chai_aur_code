@@ -52,6 +52,7 @@ function InputBox({
                 >
                     {/* Mapping through the currencyOptions array to render each option */}
                     {currencyOptions.map((currency) => (
+                    //use key always when using loops in react to enhance the performance and prevent warning
                         <option key={currency} value={currency}>
                             {currency} {/* Display currency name */}
                         </option>
